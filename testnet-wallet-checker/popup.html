@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Testnet Wallet Checker</title>
+    <style>
+      textarea { width: 100%; }
+      button { margin-top: 4px; }
+      pre { white-space: pre-wrap; word-break: break-word; }
+    </style>
+  </head>
+  <body>
+    <textarea id="mnemonic" rows="3" placeholder="Enter testnet mnemonic"></textarea>
+    <div>
+      <button id="derive">Check Balances</button>
+      <button id="generate">Generate Test Phrase</button>
+    </div>
+    <pre id="output"></pre>
+
+    <script src="https://cdn.jsdelivr.net/npm/bip39@3.1.0/browser/bip39.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bitcoinjs-lib@6.1.0/dist/bitcoinjs-lib.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Testnet Wallet Checker",
+  "version": "1.0",
+  "description": "Checks balances for testnet Bitcoin and Ethereum from a BIP-39 phrase.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://api.blockcypher.com/*",
+    "https://api-sepolia.etherscan.io/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
